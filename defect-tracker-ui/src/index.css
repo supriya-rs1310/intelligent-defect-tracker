@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #0a0e1a;
+  color: #e8edf5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #121828; }
+::-webkit-scrollbar-thumb { background: #1a3a5c; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #2a4a6c; }
+
+/* Dark Blue Theme Variables */
+:root {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #0f1629;
+  --bg-card: #121b33;
+  --bg-hover: #1a2a4a;
+  --border-color: #1a2a4a;
+  --text-primary: #e8edf5;
+  --text-secondary: #8ba0c8;
+  --text-muted: #4a6a8a;
+  --accent: #1a5a9a;
+  --accent-hover: #2a6aaa;
+  --accent-light: #1a3a6a;
+}
+
+/* Theme Classes */
+.dark-theme {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #0f1629;
+  --bg-card: #121b33;
+  --bg-hover: #1a2a4a;
+  --border-color: #1a2a4a;
+  --text-primary: #e8edf5;
+  --text-secondary: #8ba0c8;
+  --text-muted: #4a6a8a;
+  --accent: #1a5a9a;
+  --accent-hover: #2a6aaa;
+  --accent-light: #1a3a6a;
+}
+
+.light-theme {
+  --bg-primary: #f0f4fa;
+  --bg-secondary: #e4eaf2;
+  --bg-card: #ffffff;
+  --bg-hover: #dce4ee;
+  --border-color: #c8d4e0;
+  --text-primary: #0a1628;
+  --text-secondary: #2a4a6a;
+  --text-muted: #6a8aaa;
+  --accent: #1a5a9a;
+  --accent-hover: #2a6aaa;
+  --accent-light: #d4e4f4;
+}
+
+/* Chatbot Assistant UI Styles */
+.chatbot-assistant-container {
+  --primary-color: #1a5a9a;
+  --secondary-color: #2a6aaa;
+  --background-color: #0a0e1a;
+  --text-color: #e8edf5;
+}
+
+.chatbot-assistant-container .assistant-avatar {
+  transition: all 0.3s ease;
+}
+
+.chatbot-assistant-container .assistant-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Fix for Recharts rendering */
+.recharts-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.recharts-surface {
+  overflow: visible;
+}

@@ -1,0 +1,15 @@
+# Frontend
+defect-tracker-ui/node_modules/
+defect-tracker-ui/build/
+defect-tracker-ui/.env
+
+# Backend
+defect_tracker/target/
+defect_tracker/.mvn/
+defect_tracker/mvnw
+defect_tracker/mvnw.cmd
+
+# IDEs & OS
+.idea/
+.vscode/
+.DS_Store
